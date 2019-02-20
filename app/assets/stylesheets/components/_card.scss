@@ -1,0 +1,29 @@
+.card {
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+  background-color: #F8F9FA;
+  display: flex;
+  flex-direction: columns;
+}
+
+.card-details {
+  padding: 16px 16px 0px 16px;
+  flex-grow: 1;
+}
+
+.card-links {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  i {
+    margin-right:4px;
+  }
+}
+
+.card-link {
+  margin-right: 4px;
+}
+
+.card-footer {
+  background-color: #ffffff;
+}

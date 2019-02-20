@@ -1,0 +1,23 @@
+  <div class="row">
+
+    <div class="col-12 col-lg-8">
+      <div class="flat-section">
+        <h1><%= @flat.name %></h1>
+        <p><%= @flat.address %></p>
+      </div>
+
+      <div class="flat-section">
+        <h1>A bit more about this place...</h1>
+        <p><%= @flat.description %></p>
+      </div>
+
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <div class="flat-section">
+        <p>Book this place</p>
+        <%= render './flats/book-form' %>
+      </div>
+    </div>
+
+  </div>

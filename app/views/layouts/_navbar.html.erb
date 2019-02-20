@@ -1,0 +1,32 @@
+<div class="navbar-lewagon">
+  <%= link_to "Simple AirBnB", root_path %>
+
+  <!-- displayed on laptops -->
+  <div class="navbar-lewagon-actions d-none d-sm-flex">
+    <%= link_to "Add Flat", new_flat_path, class: "btn btn-outline-primary" %>
+  </div>
+
+  <!-- displayed on phone / tablet -->
+  <div class="navbar-lewagon-actions d-block d-sm-none">
+    <div class="dropdown">
+      <i class="fas fa-bars" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+        <%= link_to "#", class: "dropdown-item" do %>
+          <i class="fas fa-home"></i> Browse flats
+        <% end %>
+        <%= link_to "#", class: "dropdown-item" do %>
+          <i class="fas fa-comments"></i> Messages <span class="badge badge-pill badge-secondary text-white">5</span>
+        <% end %>
+        <%= link_to "#", class: "dropdown-item" do %>
+          <i class="fas fa-user"></i> Account
+        <% end %>
+        <%= link_to "#", class: "dropdown-item" do %>
+          <i class="fas fa-cogs"></i> Settings
+        <% end %>
+        <%= link_to "#", class: "dropdown-item" do %>
+          <i class="fas fa-sign-out-alt"></i> Log out
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
